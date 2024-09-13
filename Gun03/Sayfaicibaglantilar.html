@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa İçi Bağlantılar</title>
+</head>
+
+<body>
+    <h1>Sisteme Hoşgeldiniz</h1>
+    <h2 id="icerik">Sistemin İçeriği</h2>
+    <!--ul>li*4>a-->
+    <!-- # bağlantının nereye gideceğine karar vericez -->
+    <ul>
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#hobilerim">Hobilerim</a></li>
+        <li><a href="#projelerim">Projelerim</a></li>
+        <li><a href="#iletişim">İletişim</a></li>
+    </ul>
+    <!-- id verince linklere tıkladığımızda sayfayı oraya kaydırıyor -->
+    <h2 id="hakkımda">Hakkımda</h2>
+    <!--p*2>lorem60-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat cumque porro culpa vero aspernatur incidunt
+        adipisci accusamus, quod facere quis nisi corporis exercitationem hic ullam inventore, voluptatibus
+        necessitatibus blanditiis ea. Magni at aut sequi placeat cum saepe voluptates, quas debitis vel officiis
+        dolorum, facere ipsam eos reprehenderit fugit asperiores nemo expedita sit quidem laudantium laborum sint! Id
+        deserunt quae dicta.</p>
+    <p>Error labore, velit nihil nam veritatis odit rem tenetur ratione iste qui reiciendis. Error, rerum, voluptatem
+        ratione incidunt laudantium sed reprehenderit laboriosam repellendus quo possimus accusamus saepe obcaecati
+        porro ea itaque libero id mollitia odit temporibus illum ab atque? Totam perferendis cum eos exercitationem
+        natus, eum voluptates, odio odit dignissimos, illum veniam nisi iure! A veniam quisquam reprehenderit labore
+        tenetur!</p>
+
+    <h2 id="hobilerim">Hobilerim</h2>
+    <!--ul>li*12>lorem2-->
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Nesciunt, nobis!</li>
+        <li>Veritatis, temporibus?</li>
+        <li>Dicta, saepe.</li>
+        <li>Architecto, suscipit!</li>
+        <li>Harum, ipsam.</li>
+        <li>Numquam, adipisci.</li>
+        <li>Obcaecati, dignissimos!</li>
+        <li>Explicabo, mollitia!</li>
+        <li>Illo, numquam?</li>
+        <li>Inventore, maxime.</li>
+        <li>Ex, sequi.</li>
+    </ul>
+
+    <h2 id="projelerim">Projeler</h2>
+    <h3>Proje 1</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur cum debitis architecto nesciunt sed
+        provident fugiat itaque animi laudantium ipsam similique, quo vitae nihil quaerat a rem aperiam non!</p>
+    <h3>Proje 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam expedita odit, repellat nobis et quibusdam
+        voluptate deserunt laborum alias repudiandae qui quam, dolorem nihil, animi consequuntur molestias ipsum hic
+        doloribus.</p>
+    <h3>Proje 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptate placeat voluptas esse quibusdam facilis
+        nostrum neque, quos iste cupiditate ullam earum doloremque nemo iure veniam, velit, eos odit quo.</p>
+
+    <h2 id="iletişim">İletişim</h2>
+    <!--formlarda action kısmına formun teslim edileceği sayfanın adresine girilir.Şimdilik sunucu taraflı çalışmadığımız için yalandan bir link verilmiştir.-->
+    <form action="gonder.html" method="post">
+        <!-- method özelliği post olarak ayarlanırsa çekilen veri adres çubuğunda açıkça görünmez. get olursa url üzerinde görünür -->
+        <label for="gonderici">Adınız</label><br>
+        <input id="gonderici" type="text" name="ad"><br><br>
+
+        <label for="msj">Mesajınız</label><br>
+        <textarea id="msj" cols="30" rows="4" name="mesaj"></textarea><br><br>
+
+        <button>Gönder</button>
+
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#icerik">Başa git</a>
+    <hr><!-- horizontal -->
+    Her hakkı saklıdır &copy;2024
+
+</body>
+
+</html>
