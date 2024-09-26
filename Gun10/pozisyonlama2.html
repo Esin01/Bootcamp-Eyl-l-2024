@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pozisyonlama 2</title>
+    <style>
+        .kutu {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .poke {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            /* böyle olunca sayfanın en sağ alt köşesinde görünür */
+            /* bunu atasına relative vererek çözeriz, yani div'e göre hizalanır*/
+        }
+
+        /*mutlak pozisyonlama yapılan bir elementin konumu normalde tarayıcının görünen kısmına göre yapılır.ANCAK parent elementinde position:relative kuralı varsa onun sınırları dahilinde konumlama yapılacaktır.*/
+
+
+        .uzun {
+            position: relative;
+        }
+
+        .agac {
+            position: absolute;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+            z-index: -1;
+            opacity: .5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Başlık</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quae animi ratione repellendus voluptas debitis
+        amet, quisquam reiciendis perspiciatis illum doloremque maxime tempore repudiandae ut minus cum corporis magni
+        obcaecati.</p>
+    <p class="uzun">
+        <img class="agac" src="palmiye.png" alt="ağaç" height="100">
+    </p>
+    <div class="kutu">
+        <img src="pikachu.png" alt="Pokemon">
+    </div>
+</body>
+
+</html>
