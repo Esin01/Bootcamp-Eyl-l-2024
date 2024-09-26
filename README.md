@@ -1,1 +1,1 @@
-BENİ OKU
+BANA BAK
