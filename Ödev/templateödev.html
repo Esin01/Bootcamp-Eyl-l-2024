@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        mark {
+            background-color: black;
+            color: white;
+            padding: .2rem .5rem;
+        }
+
+        header {
+            padding: 2rem;
+            margin: 1rem 0 2rem 0;
+            text-align: center;
+        }
+
+        header > h1 {
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .col1 {
+            flex: 2;
+            margin: 0 1rem;
+        }
+
+        .col2 {
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .box {
+            background-color: white;
+            margin-bottom: 2rem;
+            min-height: 150px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 1rem;
+        }
+
+        footer {
+            min-height: 80px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Dikey düzen */
+            align-items: center; /* Ortalamak için */
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            border: #777777 1px solid;
+            margin: 5px; /* Butonlar arasında boşluk */
+        }
+
+        @media(max-width:900px) {
+            main {
+                flex-direction: column;
+            }
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+
+        .comment {
+            padding: 10px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <div class="site-desc">
+            Welcome to the blog of <mark>unknown</mark>
+        </div>
+    </header>
+
+    <main>
+        <div class="col1">
+            <div class="box">
+                <img src="woods (1).jpg" alt="Nature" style="width:100%">
+                <div class="blog-content">
+                    <h2><b>TITLE HEADING</b></h2>
+                    <h5>Title description, <span class="opacity">April 7, 2014</span></h5>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat...</p>
+                    <div>
+                        <button class="button">READ MORE »</button>
+                        <span class="comment"><b>Comments</b> <span class="tag">0</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="bridge.jpg" alt="Avatar" style="width:100%">
+                <div class="blog-content">
+                    <h2><b>BLOG ENTRY</b></h2>
+                    <h5>Title description, <span class="opacity">April 2, 2014</span></h5>
+                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat...</p>
+                    <div>
+                        <button class="button">READ MORE »</button>
+                        <span class="comment"><b>Comments</b> <span class="tag">2</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <div class="box">
+                <img src="avatar_g.jpg" alt="Avatar" style="width:100%">
+                <h2><b>My Name</b></h2>
+                <p>Just me, myself and I, exploring the universe of unknownment...</p>
+            </div>
+            <div class="box">
+                <h2>Popular Posts</h2>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img src="workshop.jpg" alt="Image" style="width:50px">
+                        <span class="large">Lorem</span><br><span>Sed mattis nunc</span>
+                    </li>
+                    <hr style="border: 1px solid #ccc; margin: 10px 0;">
+                    <li>
+                        <img src="gondol.jpg" alt="Image" style="width:50px">
+                        <span class="large">Ipsum</span><br><span>Praes tinci sed</span>
+                    </li>
+                    <hr style="border: 1px solid #ccc; margin: 10px 0;">
+                    <li>
+                        <img src="skies (1).jpg" alt="Image" style="width:50px">
+                        <span class="large">Dorum</span><br><span>Ultricies congue</span>
+                    </li>
+                    <hr style="border: 1px solid #ccc; margin: 10px 0;">
+                    <li>
+                        <img src="skies.jpg" alt="Image" style="width:50px">
+                        <span class="large">Dorum</span><br><span>Ultricies congue</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="taglar">
+                    <h2>Tags</h2>
+                    <span class="tag"   style="background-color: #333; color: #ffffff;">Travel</span>
+                    <span class="tag">New York</span>
+                    <span class="tag">London</span>
+                    <span class="tag">IKEA</span>
+                    <span class="tag">NORWAY</span>
+                    <span class="tag">DIY</span>
+                    <span class="tag">Ideas</span>
+                    <span class="tag">Baby</span>
+                    <span class="tag">Family</span>
+                    <span class="tag">News</span>
+                    <span class="tag">Clothing</span>
+                    <span class="tag">Shopping</span>
+                    <span class="tag">Sports</span>
+                    <span class="tag">Games</span>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <footer>
+        <div>
+            <button class="button">Previous</button>
+            <button class="button">Next »</button>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
+
+<!--https://www.w3schools.com/w3css/tryw3css_templates_blog.htm-->
+
